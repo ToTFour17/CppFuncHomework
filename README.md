@@ -1,0 +1,2 @@
+# CppFuncHomework
+Для домашних заданий
