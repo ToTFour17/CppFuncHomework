@@ -1,0 +1,28 @@
+﻿#include <iostream>
+using namespace std;
+int main()
+{
+    float vremia;
+    short svyaz;
+    cout << "skolko minut bil razgovor?\n";
+    cin >> vremia;
+    if (vremia >= 0) {
+        cout << "vasha svyaz:(1,2,3)\n";
+        cin >> svyaz;
+        switch (svyaz) {
+        case 1:
+            cout << "cost " << vremia * 2 << " rublya";
+            break;
+        case 2:
+            cout << "cost " << vremia * 1.6 << " rublya";
+            break;
+        case 3:
+            cout << "cost " << vremia * 2.3 << " rublya";
+            break;
+        default:
+            cout << "Wrong";
+        }
+    }
+    else
+        cout << "Wrong";
+}
