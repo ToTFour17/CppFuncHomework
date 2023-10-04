@@ -1,0 +1,32 @@
+﻿#include <iostream>
+using namespace std;
+int main()
+{
+    char q;
+    cout << "Symbol\n";
+    cin >> q;
+    if (q <= 122 && q >= 97) {
+        cout << "znachenie " << q << " eng letter\n";
+    }
+    else if (q <= 90 && q >= 65) {
+        cout << "znachenie " << q << " eng letter\n";
+    }
+    else if (q <= 57 && q >= 48) {
+        cout << "znachenie " << q << " cifra\n";
+    }
+    else if (q == 41 || q == 40 || q == 60 || q == 62 || q == 93 || q == 91 || q == 123 || q == 125) {
+        cout << "znachenie " << q << " skobka\n";
+    }
+    else if (q == 33 || q==133 || q == 46 || q == 44 || q == 59 || q == 180) {
+        cout << "znachenie " << q << " znak prepinania\n";
+    }
+    else if (q == 47 || q == 61 || q == 45 || q == 177 || q == 37 || q == 42) {
+        cout << "znachenie " << q << " znak math\n";
+    }
+    else
+        cout << "znachenie " << q << " ostalnoe\n";
+    for (int i = 0; i < 256; i++) {
+        q = i;
+        cout << i << "\t" << q << "\n";
+    }
+}
